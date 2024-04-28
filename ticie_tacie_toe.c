@@ -4,6 +4,7 @@ void intro()
 {
     int example[] = { 0 , 1, 2, 3, 4, 5, 6, 7, 8, 9 };
     printf("Welcome to the game of tic tac toe \n");
+    print("hwhwhwh");
     printf("Following are the numbers corresponding place on the board \n");
     printf("%d | %d | %d \n", example[7], example[8], example[9]);
     printf("--|---|-- \n");
