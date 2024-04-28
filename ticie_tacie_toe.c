@@ -101,7 +101,7 @@ int win_condition(char moves[], char player1, char player2, int played[], int al
 
 }
 
-void select_player1(char moves[10]) {
+void select_player1(char moves[10], int played[], int z) {
     char player1, player2;
     printf("Player 1 ('X' or 'O'):");
     scanf(" %c", &player1);
@@ -120,7 +120,7 @@ void select_player1(char moves[10]) {
     display(moves[10]);
 }
 
-void play1(char moves[10]) {
+void play1(int played[], char player1, char player2, char moves[10], int z) {
     int move_played;
     printf("Player 1's Turn (1-9):");
     scanf("%d", &move_played);
@@ -133,7 +133,7 @@ void play1(char moves[10]) {
     display(moves[10]);
 }
 
-void play2(char moves[10]) {
+void play2(int played[], char player1, char player2, char moves[10], int z) {
     int move_played;
     printf("Player 2's Turn (1-9):");
     scanf("%d", &move_played);
